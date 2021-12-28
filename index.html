@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Simple Music Player</title>
-  <!-- Load FontAwesome icons -->
-  <link rel="stylesheet" 
-        href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  
-  <!-- Load the custom CSS style file -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1fe31c3bca.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Load the main script for the player -->
+  <div id="container">
+      <div id="circle">
+        <h2>big circle</h2>
+         <div id="small-circle">
+           <h2>smaller circle</h2>
+         </div>
+      </div>
+      <div class="play">
+        <h3>play/stop circle</h3>
+      </div>
+      <div class="volume">
+        <h3>volume circle</h3>
+      </div>
+  </div>
+  <div class="playlist">
+    <h2>My Songs</h2>
+    <ul class="songlist">
+      <li data-src="data/eg_song.wav data-name="Song!" data-index=0> <span>Song!</span></li>
+    </ul>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>

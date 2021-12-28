@@ -1,0 +1,33 @@
+#container {
+    position: relative;
+ }
+ 
+ #circle {
+    position: absolute;
+    margin: auto;
+    width: 751px;
+    height: 751px;
+    background: #2E2F3C;
+    border-radius: 50%;
+ }
+ 
+ #small-circle{
+    margin-top: 25%;
+    margin-left: 25%;
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    background: #3D3C91;
+    border: 10px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50%;
+ }
+
+ #play{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #C4C4C4;
+    border-radius: 50%;
+
+}
