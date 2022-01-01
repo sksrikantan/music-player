@@ -6,6 +6,7 @@
 
 .topnav {
    background-color: #9999A3;
+   /* background-color: black; */
    overflow: hidden;
  }
 
@@ -64,8 +65,7 @@
 }
 
 #small-circle{
-    margin-top: 0%;
-    margin-left: 0%;
+    
     position: absolute;
     right: 35%;
     top: 35%;
@@ -75,6 +75,28 @@
     border: calc(50vh/100) solid #000000;
     box-sizing: border-box;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vinyl-print { 
+   text-align: center;
+   animation: rotate 5s linear infinite; 
+   animation-play-state: paused;
+}
+
+.container.play .vinyl-print{
+   animation-play-state: running;
+}
+
+@keyframes rotate {
+   from{
+      transform: rotate(0deg)
+   }
+   to{
+      transform: rotate(360deg)
+   }
 }
 
 #play{
@@ -116,6 +138,7 @@
    border-radius: 15%;
    transform: rotate(30deg);
 }
+
 #record-player-circle{
    position: absolute;
    right: -17%;
