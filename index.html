@@ -7,6 +7,7 @@
   <title>Music Player</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="topnav">
@@ -18,16 +19,24 @@
     <div class="library">
       <h2>Library</h2>
       <ul class="songlist">
-        <li data-src="data/AaoNa.wav" data-name="Song!" data-index=0> <span>Aao Na</span></li>
-        <li data-src="data/NoSé.wav" data-name="Song!" data-index=1> <span>No Sé</span></li>
+        <li data-src="data/AaoNa.wav" data-name="Aao Na" data-artist="Shevya" data-index=0 > <span>Aao Na</span><span>Shevya</span><span>3:21</span></li>
+        <li data-src="data/NoSé.wav" data-name="No Sé" data-artist="Michael Ventura" data-index=1> <span>No Tu Sé</span><span>Michael Ventura</span><span>4:02</span></li>
+        <li data-src="data/NainaMoray.wav" data-name="Naina Moray" data-artist="Javed Bashir, Akbar Ali" data-index=2><span>Naina Moray</span><span>Javed Bashir, Akbar Ali</span><span>time</span></li>
       </ul> 
+      <audio src="data/NoSé.wav" id="audio"></audio>
     </div>
-    <div class="record player">
+    <div class="record-player">
       <div id="circle">
          <div id="small-circle">
-           <h5 class="vinyl-print">Artist<br><br>Song name<br><br>PLAYA</h5>
+          <div class="vinyl-print">
+            <h5 class='artist-name'>Select</h5>
+            <h5 class = 'title'>A Song!</h5>
+            <h5>PLAYA</h5>
+          </div>
          </div>
-         <button class="play" onclick="turnRecord(event)"> </button>
+         <button class="play" onclick="turnRecord(event);playAudio()"> 
+          <i id="play-pause" class="fa fa-play"></i>
+        </button>
          <button id="volume"> </button>
          <div id="rect1"> </div>
          <div id="rect2"> </div>
@@ -38,7 +47,7 @@
 
   <script src="https://kit.fontawesome.com/1fe31c3bca.js" crossorigin="anonymous"></script>
   <script src="meta.js"> </script>
-  <script src="main.js"></script>
+  <!-- <script src="main.js"> </script> -->
   <script src="record.js"></script>
 </body>
 </html>

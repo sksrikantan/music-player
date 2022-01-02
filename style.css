@@ -49,8 +49,43 @@
  }
 
 .library {
-   flex-direction: left;
-   margin: 8% 0% 0% 15%
+   /* position: relative; */
+   display: flex;
+   margin: 5% 0% 0% 15%;
+   padding: 3% 0% 0% 3%;
+   background-color: white;
+   border-radius: 5px;
+   height: 60vh;
+   width: 10vw;
+   overflow: scroll;
+}
+
+.library h2{
+   
+}
+
+.library ul{ 
+   position: absolute; 
+   overflow: scroll;
+   list-style-type: none;
+   text-align: left;
+   flex-basis: 100%; 
+   
+   padding: 0;
+   margin-top: 2%;
+}
+
+.library ul li { 
+   padding: 10% 10% 10% 0%; 
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer; 
+   border-bottom: 1px solid #DDD; 
+
+}
+
+.library ul li.active { 
+   font-weight: bold;
 }
 
 #circle {
@@ -81,6 +116,7 @@
 }
 
 .vinyl-print { 
+   font-size: 1vw;
    text-align: center;
    animation: rotate 5s linear infinite; 
    animation-play-state: paused;
