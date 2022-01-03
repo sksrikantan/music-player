@@ -91,6 +91,20 @@
    font-weight: bold;
 }
 
+#botnav {
+   bottom: 0;
+   position: fixed;
+   width: 100%;
+   overflow: hidden;
+   text-align: center;
+}
+
+#botnav a {
+   color: #f2f2f2;
+   padding: 3% 1% 10% 5%;
+   font-size: 22px;
+}
+
 #circle {
    position: absolute;
    left: calc(50vw - 17vh);

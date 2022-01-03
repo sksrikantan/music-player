@@ -24,6 +24,14 @@
         <li data-src="data/NainaMoray.wav" data-name="Naina Moray" data-artist="Javed Bashir, Akbar Ali" data-index=2><span>Naina Moray</span><span>Javed Bashir, Akbar Ali</span><span>time</span></li>
       </ul> 
       <audio src="data/NoSé.wav" id="audio"></audio>
+      <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
+      <audio src="noise/tape_hiss.wav" id="hiss"></audio>
+      <audio src="noise/radio_muffle.wav" id="muffle"></audio>
+      <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
+    </div>
+    <div class='navbar' id="botnav">
+      <a href="#record-player" class="active">Vinyl</a>
+      <a href="#cassette" class="active">Cassette</a>
     </div>
     <div class="record-player">
       <div id="circle">
@@ -34,7 +42,7 @@
             <h5>PLAYA</h5>
           </div>
          </div>
-         <button class="play" onclick="turnRecord(event);playAudio()"> 
+         <button class="play" onclick="playButton(event);playAudio()"> 
           <i id="play-pause" class="fa fa-play"></i>
         </button>
          <button id="volume"> </button>
