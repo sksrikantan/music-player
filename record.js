@@ -1,7 +1,10 @@
 const audio = document.querySelector('audio');
 const songList = document.querySelector('.songlist');
+const songName = document.querySelector('.vinyl-print');
+const crackle = document.querySelector('#crackle')
 
 songList.addEventListener("click", function(e) {
+
     title = e.target.closest('li').getAttribute('data-name');
     artist = e.target.closest('li').getAttribute('data-artist');
     source = e.target.closest('li').getAttribute('data-src');
@@ -10,22 +13,34 @@ songList.addEventListener("click", function(e) {
     document.querySelector('.artist-name').innerText  = artist;
     audio.src = source; 
 
+    
+    songName.style.animationPlayState = "running";
+    document.getElementById('play-pause').classList = 'fa fa-pause';
+    playVinyl();
+
+
 }, false);
 
-function turnRecord(evt){
-    let songName = document.getElementsByClassName('vinyl-print').item(0);
+function playButton(evt){
 
     if(songName.style.animationPlayState == "running"){
         songName.style.animationPlayState = "paused";
         document.getElementById('play-pause').classList = 'fa fa-play';
-        audio.pause();
-    }else{
+        pauseVinyl();
+    }
+    else{
         songName.style.animationPlayState = "running";
         document.getElementById('play-pause').classList = 'fa fa-pause';
-        audio.play();
+        playVinyl();
     }
 }
 
-// window.addEventListener('DOMContentLoaded', () => {
-//     toggleButton()
-// });
+function playVinyl(){
+    crackle.loop = true;
+    crackle.play();
+    audio.play();
+}
+function pauseVinyl(){
+    crackle.pause();
+    audio.pause();
+}
