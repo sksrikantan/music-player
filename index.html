@@ -30,10 +30,10 @@
       <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
     </div>
     <div class='navbar' id="botnav">
-      <a href="#record-player" class="active">Vinyl</a>
-      <a href="#cassette" class="active">Cassette</a>
+      <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Vinyl</a>
+      <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Cassette')">Cassette</a>
     </div>
-    <div class="record-player">
+    <div id="Vinyl" class="mode-content">
       <div id="circle">
          <div id="small-circle">
           <div class="vinyl-print">
@@ -51,11 +51,16 @@
          <div id="record-player-circle"> </div>
       </div>
     </div>
+    <div id="Cassette" class="mode-content" style="display: none;">
+      <div id="cassette-rect"> 
+        
+      </div>
+    </div>
   </div>
 
   <script src="https://kit.fontawesome.com/1fe31c3bca.js" crossorigin="anonymous"></script>
   <script src="meta.js"> </script>
-  <!-- <script src="main.js"> </script> -->
+  <script src="main.js"> </script>
   <script src="record.js"></script>
 </body>
 </html>

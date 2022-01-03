@@ -103,12 +103,19 @@
    color: #f2f2f2;
    padding: 3% 1% 10% 5%;
    font-size: 22px;
+   cursor: pointer;
+}
+#botnav a:hover{
+   color: lightblue;
+}
+#botnav a.active{
+   color: blue;
 }
 
 #circle {
    position: absolute;
-   left: calc(50vw - 17vh);
-   top: 20vh;
+   left: calc(50vw - 15vh);
+   top: 25vh;
    margin: auto;
    height: 60vh;
    width: 60vh;
@@ -206,4 +213,17 @@
    height: 17%;
    background: #C4C4C4;
    border-radius: 50%;
+}
+
+#cassette-rect {
+   position: absolute;
+   left: calc(50vw - 7vh);
+   top: 43vh;
+   margin: auto;
+   height: 35vh;
+   width: 80vh;
+   background: #C05353;
+   border: 1vh solid black;
+   box-sizing: border-box;
+   border-radius: 1vh;
 }
