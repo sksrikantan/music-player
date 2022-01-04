@@ -92,11 +92,13 @@
 }
 
 #botnav {
+   padding-bottom: 2%; 
    bottom: 0;
    position: fixed;
    width: 100%;
    overflow: hidden;
    text-align: center;
+   font-;
 }
 
 #botnav a {

@@ -32,6 +32,8 @@
     <div class='navbar' id="botnav">
       <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Vinyl</a>
       <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Cassette')">Cassette</a>
+      <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Radio')">Radio</a>
+      <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Disc')">Disc</a>
     </div>
     <div id="Vinyl" class="mode-content">
       <div id="circle">
@@ -42,7 +44,7 @@
             <h5>PLAYA</h5>
           </div>
          </div>
-         <button class="play" onclick="playButton(event);playAudio()"> 
+         <button class="play" onclick="playButton(event)"> 
           <i id="play-pause" class="fa fa-play"></i>
         </button>
          <button id="volume"> </button>
@@ -53,6 +55,16 @@
     </div>
     <div id="Cassette" class="mode-content" style="display: none;">
       <div id="cassette-rect"> 
+        
+      </div>
+    </div>
+    <div id="Radio" class="mode-content" style="display: none;">
+      <div id="radio-rect"> 
+        
+      </div>
+    </div>
+    <div id="Disc" class="mode-content" style="display: none;">
+      <div id="cd"> 
         
       </div>
     </div>
