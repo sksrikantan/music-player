@@ -6,6 +6,7 @@ const hiss = document.querySelector('#hiss');
 const muffle = document.querySelector ('#muffle');
 sessionStorage.player = 'Vinyl';
 const playbtns = document.getElementsByName("play-pause");
+const bgcolors = {"Vinyl": "#F3F6F8", "Cassette": "#9B8E8E", "Radio": "#F3F6F8", "CD": "#F3F6F8"};
 
 function openMode(evt, mode){
     var i, content, links;
@@ -22,6 +23,10 @@ function openMode(evt, mode){
     switchNoise();
     document.getElementById(mode).style.display = "block";
     evt.currentTarget.className += " active";
+
+    document.getElementsByClassName("container").item(0).style.background = bgcolors[mode];
+    document.getElementsByClassName("topnav").item(0).style.background = bgcolors[mode];
+    document.getElementsByClassName("navbar").item(0).style.background = bgcolors[mode];
 }
 
 songList.addEventListener("click", function(e) {

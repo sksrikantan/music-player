@@ -62,7 +62,7 @@
    overflow: hidden;
    text-align: center;
    z-index: 1;
-   background-color: #9999A3;
+   background-color: #F3F6F8;
    padding-top: 2%;
    /* font-; */
 }
@@ -218,7 +218,7 @@
    /* margin-bottom: 15%; */
    height: 40%;
    width: 30%;
-   background: #C4C4C4;
+   background: #A5A4A4;
    border-radius: 1vh;
 }
 
