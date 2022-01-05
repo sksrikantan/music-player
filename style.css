@@ -7,10 +7,14 @@
 .container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-color:#9999A3;
  }
 
+ body{
+    overflow-y: hidden;
+ }
+ 
 .library {
    /* position: relative; */
    display: flex;
@@ -56,6 +60,9 @@
    width: 100%;
    overflow: hidden;
    text-align: center;
+   z-index: 1;
+   background-color: #9999A3;
+   padding-top: 2%;
    /* font-; */
 }
 
@@ -75,11 +82,11 @@
 
 #circle {
    position: absolute;
-   left: calc(50vw - 15vh);
-   top: 25vh;
+   left: 45vw;
+   top: 22vh;
    margin: auto;
-   height: 60vh;
-   width: 60vh;
+   height: 32vw;
+   width: 32vw;
    background: #2E2F3C;
    border-radius: 50%;
 }
@@ -122,13 +129,21 @@
 
 .play{
     position: absolute;
-    right: -40%;
-    top: 30%;
-    width: 17%;
-    height: 17%;
     background: #C4C4C4;
     border-radius: 50%;
     border: none;
+}
+#vinyl-position{
+   right: -40%;
+   top: 30%;
+   width: 17%;
+   height: 17%;
+}
+#cassette-position{
+   left: 35%;
+   top: 7%;
+   height: 25%;
+   width: 12.5%;
 }
 
 .play:hover{
@@ -186,9 +201,9 @@
 
 #cassette-rect {
    position: relative;
-   height: 42vh;
+   height: 21vw;
    width: 42vw;
-   margin: 35% 10% 5% 20%;
+   margin: 30% 10% 5% 25%;
    background: #C05353;
    border: 1vh solid black;
    border-radius: 1vh;
@@ -197,11 +212,11 @@
 
 #small-rect { 
    position: absolute;
-   margin-top: 18vh;
-   margin-left: 14vw;
-   margin-bottom: 10vh;
-   height: 14vh;
-   width: 14vw;
+   margin-top: 20%;
+   margin-left: 35%;
+   /* margin-bottom: 15%; */
+   height: 40%;
+   width: 30%;
    background: #C4C4C4;
    border-radius: 1vh;
 }
@@ -209,9 +224,9 @@
 #left-speak { 
    position: absolute;
    background: #362929;
-   margin-top: 12vh;
-   margin-left: 2vw;
-   margin-bottom: 0;
+   margin-top: 13%;
+   margin-left: 5%;
+   /* margin-bottom: 0; */
    height: 44%;
    width: 22%;
    border-radius: 50%;
@@ -221,9 +236,9 @@
 #right-speak { 
    position: absolute;
    background: #362929;
-   margin-top: 12vh;
-   margin-left: 29vw;
-   margin-bottom: 0;
+   margin-top: 13%;
+   margin-left: 68.5%;
+   /* margin-bottom: 0; */
    height: 44%;
    width: 22%;
    border-radius: 50%;

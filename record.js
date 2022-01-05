@@ -5,6 +5,7 @@ const crackle = document.querySelector('#crackle');
 const hiss = document.querySelector('#hiss');
 const muffle = document.querySelector ('#muffle');
 sessionStorage.player = 'Vinyl';
+const playbtns = document.getElementsByName("play-pause");
 
 function openMode(evt, mode){
     var i, content, links;
@@ -35,8 +36,12 @@ songList.addEventListener("click", function(e) {
 
     
     songName.style.animationPlayState = "running";
-    document.getElementById('play-pause').classList = 'fa fa-pause';
+    // document.getElementById('play-pause').classList = 'fa fa-pause';
     
+    for(var i = 0; i < playbtns.length; i++){
+        playbtns.item(i).classList = 'fa fa-pause';
+    }
+
     playMusic();
 
 }, false);
@@ -45,12 +50,18 @@ function playButton(evt){
 
     if(songName.style.animationPlayState == "running"){
         songName.style.animationPlayState = "paused";
-        document.getElementById('play-pause').classList = 'fa fa-play';
+        // document.getElementById('play-pause').classList = 'fa fa-play';
+        for(var i = 0; i < playbtns.length; i++){
+            playbtns.item(i).classList = 'fa fa-play';
+        }
         pauseMusic();
     }
     else{
         songName.style.animationPlayState = "running";
-        document.getElementById('play-pause').classList = 'fa fa-pause';
+        // document.getElementById('play-pause').classList = 'fa fa-pause';
+        for(var i = 0; i < playbtns.length; i++){
+            playbtns.item(i).classList = 'fa fa-pause';
+        }
         playMusic();
     }
 }
