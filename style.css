@@ -151,15 +151,26 @@
    background: rgb(218, 218, 218);
 }
 
-#volume{
+.volume{
    position: absolute;
-   right: -30%;
-   top: 80%;
-   width: 17%;
-   height: 17%;
    background: #A5A4A4;
    border-radius: 50%;
    border: none;
+}
+#vinyl-volume{
+   right: -25%;
+   top: 80%;
+   width: 17%;
+   height: 17%;
+}
+#cassette-volume{
+   left: 52%;
+   top: 7%;
+   width: 12.5%;
+   height: 25%;
+}
+.volume:hover{
+   background: rgb(218, 218, 218);
 }
 
 #rect1{
