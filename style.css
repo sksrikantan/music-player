@@ -8,7 +8,7 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color:#9999A3;
+    background-color:#F3F6F8;
  }
 
 .library {
@@ -21,6 +21,7 @@
    height: 60vh;
    width: 27vw;
    overflow: scroll;
+   border: 1px color black;
 }
 
 .library ul{ 
@@ -56,13 +57,12 @@
    width: 100%;
    overflow: hidden;
    text-align: center;
-   /* font-; */
 }
 
 #botnav a {
-   color: #f2f2f2;
+   color: black;
    padding: 3% 1% 10% 5%;
-   font-size: 22px;
+   font-size: 17px;
    cursor: pointer;
    text-decoration: none;
 }
@@ -126,7 +126,7 @@
     top: 30%;
     width: 17%;
     height: 17%;
-    background: #C4C4C4;
+    background: #A5A4A4;
     border-radius: 50%;
     border: none;
 }
@@ -141,7 +141,7 @@
    top: 80%;
    width: 17%;
    height: 17%;
-   background: #C4C4C4;
+   background: #A5A4A4;
    border-radius: 50%;
    border: none;
 }
@@ -152,7 +152,7 @@
    height: 18%;
    right: 13%;
    top: 45%;
-   background: #C4C4C4;
+   background: #A5A4A4;
    border-radius: 15%;
    transform: rotate(60deg);
 }
@@ -162,7 +162,7 @@
    height: 45%;
    right: -5%;
    top: 8.5%;
-   background: #C4C4C4;
+   background: #A5A4A4;
    border-radius: 15%;
    transform: rotate(30deg);
 }
@@ -173,7 +173,7 @@
    top: 13%;
    width: 17%;
    height: 17%;
-   background: #C4C4C4;
+   background: #A5A4A4;
    border-radius: 50%;
 }
 
