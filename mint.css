@@ -1,11 +1,17 @@
 
 .form-container {
-    /* position: relative; */
-    display:flex;
+    position: relative;
+    display: block;
     width: 100vw;
     height: 100vh;
     background-color:#9999A3;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    /* text-align: center; */
 }
+
+.form-container form{
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: inline-block;
+}
+
