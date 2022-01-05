@@ -4,48 +4,10 @@
    padding:0;
 }
 
-.topnav {
-   background-color: #9999A3;
-   /* background-color: black; */
-   overflow: hidden;
-   /* height: 10vh; */
- }
-
-.topnav h1 {
-   float: left;
-   color: #f2f2f2;
-   text-align: center;
-   padding: 3% 1% 1% 5%;
-   font-size: 22px;
-}
-
-.topnav button {
-   float: right;
-   border: none;
-   color: black;
-   margin: 2% 1% 1% 1%; 
-   padding: 1% 1% 1% 1%;
-   background-color: #F6851B;
-   text-align: center;
-   font-size: 17px;
-   text-decoration: none;
-   border-radius: 10px;
-}
-
-.topnav p {
-   float: right;
-   color: #f2f2f2;
-   text-align: center;
-   padding: 3% 0% 1% 1%;
-   font-size: 17px;
-}
-
 .container {
     display: flex;
     width: 100vw;
-    height: 90vh;
-    /* align-items: center; */
-    /* justify-content: left; */
+    height: 100vh;
     background-color:#9999A3;
  }
 
@@ -61,16 +23,12 @@
    overflow: scroll;
 }
 
-/* .library h2{
-   
-} */
-
 .library ul{ 
    position: absolute; 
    overflow: scroll;
    list-style-type: none;
    text-align: left;
-   flex-basis: 100%; 
+   /* flex-basis: 100%;  */
    width: 27vw;
    height: 55vh;
    padding: 0;
@@ -98,7 +56,7 @@
    width: 100%;
    overflow: hidden;
    text-align: center;
-   font-;
+   /* font-; */
 }
 
 #botnav a {
@@ -106,6 +64,7 @@
    padding: 3% 1% 10% 5%;
    font-size: 22px;
    cursor: pointer;
+   text-decoration: none;
 }
 #botnav a:hover{
    color: lightblue;
@@ -171,6 +130,7 @@
     border-radius: 50%;
     border: none;
 }
+
 .play:hover{
    background: rgb(218, 218, 218);
 }
@@ -217,15 +177,56 @@
    border-radius: 50%;
 }
 
-#cassette-rect {
-   position: absolute;
-   left: calc(50vw - 7vh);
+#handle { 
+   position: absolute; 
+   box-shadow: none;
    top: 43vh;
-   margin: auto;
-   height: 35vh;
-   width: 80vh;
+   width: 45vh;
+}
+
+#cassette-rect {
+   position: relative;
+   height: 42vh;
+   width: 42vw;
+   margin: 35% 10% 5% 20%;
    background: #C05353;
    border: 1vh solid black;
-   box-sizing: border-box;
+   border-radius: 1vh;
+   overflow: hidden;
+}
+
+#small-rect { 
+   position: absolute;
+   margin-top: 18vh;
+   margin-left: 14vw;
+   margin-bottom: 10vh;
+   height: 14vh;
+   width: 14vw;
+   background: #C4C4C4;
    border-radius: 1vh;
 }
+
+#left-speak { 
+   position: absolute;
+   background: #362929;
+   margin-top: 12vh;
+   margin-left: 2vw;
+   margin-bottom: 0;
+   height: 44%;
+   width: 22%;
+   border-radius: 50%;
+   border: 1vw solid #FFFFFF;
+}
+
+#right-speak { 
+   position: absolute;
+   background: #362929;
+   margin-top: 12vh;
+   margin-left: 29vw;
+   margin-bottom: 0;
+   height: 44%;
+   width: 22%;
+   border-radius: 50%;
+   border: 1vw solid #FFFFFF;
+}
+

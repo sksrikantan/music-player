@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Player</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="topnav">
-    <h1>PLAYA</h1>
+    <a class="home" href="./index.html">PLAYA</a>
+    <a class="sub-page" href="./mint.html">Mint</a>
+    <a class="sub-page" href=".buy">Browse</a>
     <button id='loginButton'> MetaMask </button>
     <p id='userWallet'> </p>
   </div>
@@ -33,7 +37,7 @@
       <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Vinyl</a>
       <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Cassette')">Cassette</a>
       <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Radio')">Radio</a>
-      <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Disc')">Disc</a>
+      <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'CD')">Compact Disc</a>
     </div>
     <div id="Vinyl" class="mode-content">
       <div id="circle">
@@ -44,7 +48,7 @@
             <h5>PLAYA</h5>
           </div>
          </div>
-         <button class="play" onclick="playButton(event)"> 
+         <button class="play" id = "vinyl-position" onclick="playButton(event)"> 
           <i id="play-pause" class="fa fa-play"></i>
         </button>
          <button id="volume"> </button>
@@ -54,9 +58,16 @@
       </div>
     </div>
     <div id="Cassette" class="mode-content" style="display: none;">
-      <div id="cassette-rect"> 
-        
+      <!-- <img src='cassette_handle.png' id='handle'> -->
+      <div id="cassette-rect">
+        <div id = "small-rect"></div>
+        <div id = "left-speak"></div>
+        <div id = "right-speak"></div>
       </div>
+        <button class="play" id="cassette-position" onclick="playButton(event)"> 
+          <i id="play-pause" class="fa fa-play"></i>
+        </button>
+        <!-- <button id="volume"> </button> -->
     </div>
     <div id="Radio" class="mode-content" style="display: none;">
       <div id="radio-rect"> 
@@ -69,7 +80,6 @@
       </div>
     </div>
   </div>
-
   <script src="https://kit.fontawesome.com/1fe31c3bca.js" crossorigin="anonymous"></script>
   <script src="meta.js"> </script>
   <script src="main.js"> </script>

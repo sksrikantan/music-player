@@ -1,0 +1,46 @@
+
+.topnav {
+    background-color: #9999A3;
+    /* background-color: black; */
+    overflow: hidden;
+    /* height: 10vh; */
+  }
+ 
+ .topnav .home {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    margin: 3.2% 0% 0% 10%;
+    text-decoration: none;
+ }
+ 
+ .topnav .sub-page {
+    float: left;
+    text-align: center;
+    margin: 3.5% 0% 0% 8%;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+ }
+ 
+ .topnav button {
+    float: right;
+    border: none;
+    color: black;
+    margin: 2% 1% 1% 1%; 
+    padding: 1% 1% 1% 1%;
+    background-color: #F6851B;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 10px;
+ }
+ 
+ .topnav p {
+    float: right;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3% 0% 1% 1%;
+    font-size: 17px;
+ }
