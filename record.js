@@ -31,12 +31,20 @@ function openMode(evt, mode){
 
 songList.addEventListener("click", function(e) {
 
-    title = e.target.closest('li').getAttribute('data-name');
-    artist = e.target.closest('li').getAttribute('data-artist');
-    source = e.target.closest('li').getAttribute('data-src');
+    var title = e.target.closest('li').getAttribute('data-name');
+    var artist = e.target.closest('li').getAttribute('data-artist');
+    var source = e.target.closest('li').getAttribute('data-src');
 
-    document.querySelector('.title').innerText = title;
-    document.querySelector('.artist-name').innerText  = artist;
+    let titles = document.querySelectorAll('.title')
+    titles.forEach(function(match) {
+        match.innerText = title;
+      });
+
+    let artists = document.querySelectorAll('.artist-name')
+    artists.forEach(function(match) {
+        match.innerText = artist;
+      });
+
     audio.src = source; 
 
     

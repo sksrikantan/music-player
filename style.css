@@ -109,7 +109,7 @@
 }
 
 .vinyl-print { 
-   font-size: 1vw;
+   font-size: 1.2vw;
    text-align: center;
    animation: rotate 5s linear infinite; 
    animation-play-state: paused;
@@ -177,10 +177,10 @@
    position: absolute;
    width: 3%;
    height: 18%;
-   right: 13%;
-   top: 45%;
+   right: 13.347%;
+   top: 45.123%;
    background: #A5A4A4;
-   border-radius: 15%;
+   border-radius: 10%;
    transform: rotate(60deg);
 }
 #rect2{
@@ -190,7 +190,7 @@
    right: -5%;
    top: 8.5%;
    background: #A5A4A4;
-   border-radius: 15%;
+   border-radius: 12%;
    transform: rotate(30deg);
 }
 
@@ -231,6 +231,15 @@
    width: 30%;
    background: #A5A4A4;
    border-radius: 1vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.cassette-print { 
+   font-size: 1.5vw;
+   text-align: center;
+   /* margin-top: 22% */
 }
 
 #left-speak { 

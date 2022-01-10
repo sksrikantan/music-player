@@ -15,7 +15,7 @@
   <div class="topnav">
     <a class="home" href="./index.html">PLAYA</a>
     <a class="sub-page" href="./mint.html">Mint</a>
-    <a class="sub-page" href=".buy">Browse</a>
+    <a class="sub-page" href="./browse.html">Browse</a>
     <button id='loginButton'> MetaMask </button>
     <p id='userWallet'> </p>
   </div>
@@ -23,11 +23,11 @@
     <div class="library">
       <h2>Library</h2>
       <ul class="songlist">
-        <li data-src="data/AaoNa.wav" data-name="Aao Na" data-artist="Shevya" data-index=0 > <span>Aao Na</span><span>Shevya</span><span>3:21</span></li>
-        <li data-src="data/NoSé.wav" data-name="No Sé" data-artist="Michael Ventura" data-index=1> <span>No Tu Sé</span><span>Michael Ventura</span><span>4:02</span></li>
-        <li data-src="data/NainaMoray.wav" data-name="Naina Moray" data-artist="Javed Bashir, Akbar Ali" data-index=2><span>Naina Moray</span><span>Javed Bashir, Akbar Ali</span><span>time</span></li>
+        <li data-src="songs/AaoNa.wav" data-name="Aao Na" data-artist="Shevya" data-index=0 > <span>Aao Na</span><span>Shevya</span><span>3:21</span></li>
+        <li data-src="songs/NoSé.wav" data-name="No Sé" data-artist="Michael Ventura" data-index=1> <span>No Sé</span><span>Michael Ventura</span><span>4:02</span></li>
+        <li data-src="songs/NainaMoray.wav" data-name="Naina Moray really big song name" data-artist="Javed Bashir and the great Akbar Ali long artist causes issue" data-index=2><span>Naina Moray</span><span>Javed Bashir, Akbar Ali</span><span>time</span></li>
       </ul> 
-      <audio src="data/NoSé.wav" id="audio"></audio>
+      <audio src="songs/NoSé.wav" id="audio"></audio>
       <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
       <audio src="noise/tape_hiss.wav" id="hiss"></audio>
       <audio src="noise/radio_muffle.wav" id="muffle"></audio>
@@ -60,7 +60,13 @@
     <div id="Cassette" class="mode-content" style="display: none;">
       <!-- <img src='cassette_handle.png' id='handle'> -->
       <div id="cassette-rect">
-        <div id = "small-rect"></div>
+        <div id = "small-rect">
+          <div class="cassette-print">
+            <h5 class='artist-name'>Select</h5>
+            <h5 class = 'title'>A Song!</h5>
+            <h5>PLAYA</h5>
+          </div>
+        </div>
         <div id = "left-speak"></div>
         <div id = "right-speak"></div>
         <button class="play" id="cassette-position" onclick="playButton(event)"> 
