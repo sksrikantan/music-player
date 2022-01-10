@@ -1,6 +1,9 @@
 const audio = document.querySelector('audio');
 const songList = document.querySelector('.songlist');
 const songName = document.querySelector('.vinyl-print');
+// const container = document.getElementsByName("container");
+//have animation such that gear play state is set from here
+const gear = document.querySelectorAll(".gear");
 const crackle = document.querySelector('#crackle');
 const hiss = document.querySelector('#hiss');
 const muffle = document.querySelector ('#muffle');
@@ -49,6 +52,9 @@ songList.addEventListener("click", function(e) {
 
     
     songName.style.animationPlayState = "running";
+    for(var i = 0; i < gear.length; i++){
+        gear.item(i).style.animationPlayState = "running";
+    }
     // document.getElementById('play-pause').classList = 'fa fa-pause';
     
     for(var i = 0; i < playbtns.length; i++){
@@ -63,6 +69,9 @@ function playButton(evt){
 
     if(songName.style.animationPlayState == "running"){
         songName.style.animationPlayState = "paused";
+        for(var i = 0; i < gear.length; i++){
+            gear.item(i).style.animationPlayState = "paused";
+        }
         // document.getElementById('play-pause').classList = 'fa fa-play';
         for(var i = 0; i < playbtns.length; i++){
             playbtns.item(i).classList = 'fa fa-play';
@@ -71,6 +80,9 @@ function playButton(evt){
     }
     else{
         songName.style.animationPlayState = "running";
+        for(var i = 0; i < gear.length; i++){
+            gear.item(i).style.animationPlayState = "running";
+        }
         // document.getElementById('play-pause').classList = 'fa fa-pause';
         for(var i = 0; i < playbtns.length; i++){
             playbtns.item(i).classList = 'fa fa-pause';

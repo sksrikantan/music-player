@@ -115,9 +115,9 @@
    animation-play-state: paused;
 }
 
-.container.play .vinyl-print{
+/* .container.play .vinyl-print{
    animation-play-state: running;
-}
+} */
 
 @keyframes rotate {
    from{
@@ -130,47 +130,66 @@
 
 .play{
     position: absolute;
-    background: #A5A4A4;
     border-radius: 50%;
     border: none;
 }
 #vinyl-position{
+   background: #A5A4A4;
    right: -40%;
    top: 30%;
    width: 17%;
    height: 17%;
 }
 #cassette-position{
+   background: #C4C4C4;
    left: 35%;
    top: 7%;
    height: 25%;
    width: 12.5%;
 }
+#radio-position{
+   background: #C4C4C4;
+   left: 6%;
+   top: 12%;
+   height: 31%;
+   width: 14%;
+   border: 0.4vw solid #4A3E3E;
+}
+
 
 .play:hover{
-   background: rgb(218, 218, 218);
+   border: 2px solid rgb(0, 0, 0);
 }
 
 .volume{
    position: absolute;
-   background: #A5A4A4;
    border-radius: 50%;
    border: none;
 }
 #vinyl-volume{
+   background: #A5A4A4;
    right: -25%;
    top: 80%;
    width: 17%;
    height: 17%;
 }
 #cassette-volume{
+   background: #C4C4C4;
    left: 52%;
    top: 7%;
    width: 12.5%;
    height: 25%;
 }
+#radio-volume{
+   background: #C4C4C4;
+   right: 6%;
+   top: 12%;
+   height: 31%;
+   width: 14%;
+   border: 0.4vw solid #4A3E3E;
+}
 .volume:hover{
-   background: rgb(218, 218, 218);
+   border: 2px solid rgb(0, 0, 0);
 }
 
 #rect1{
@@ -207,8 +226,9 @@
 #handle { 
    position: absolute; 
    box-shadow: none;
-   top: 43vh;
-   width: 45vh;
+   top: -27%;
+   left: 5%;
+   width: 90%;
 }
 
 #cassette-rect {
@@ -219,7 +239,7 @@
    background: #C05353;
    border: 1vh solid black;
    border-radius: 1vh;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
 #small-rect { 
@@ -229,7 +249,7 @@
    /* margin-bottom: 15%; */
    height: 40%;
    width: 30%;
-   background: #A5A4A4;
+   background: #C4C4C4;
    border-radius: 1vh;
    display: flex;
    align-items: center;
@@ -264,5 +284,71 @@
    width: 22%;
    border-radius: 50%;
    border: 1vw solid #FFFFFF;
+}
+
+#radio-rect {
+   position: relative;
+   height: 21vw;
+   width: 42vw;
+   margin: 25% 10% 5% 25%;
+   background: #D8A033;
+   border: 1.5vh solid #A17828;
+   border-radius: 0.2vh;
+}
+#inner-rect {
+   position: absolute;
+   height: 40%;
+   width: 40%;
+   top: 29.5%;
+   right: 29.5%;
+   background: #C4C4C4;
+   border: 1.2vh solid #4A3E3E;
+   border-radius: 0.2vh;
+}
+.radio-mode{
+   background-color: #C4C4C4;
+   color: black;
+   position: absolute;
+   font-family: Khmer MN;
+   font-style: normal;
+   font-weight: bold;
+
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   border: 0;
+
+   width: 10%;
+   height: 10%;
+   top: 83%;
+}
+#radio-fm{
+   right: 35%;
+}
+#radio-am{
+   left: 33%;
+}
+.gear{
+   animation: rotate 5s linear infinite; 
+   animation-play-state: paused;
+}
+#gear-1{
+   position: absolute;
+   top: 30%;
+   left: 12%;
+   height: 30%;
+   width: 20%;
+}
+#gear-2{
+   position: absolute;
+   top: 30%;
+   right: 12%;
+   height: 30%;
+   width: 20%;
+}
+
+.container.play .gear{
+   animation-play-state: running;
 }
 
