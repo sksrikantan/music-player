@@ -58,19 +58,29 @@
       </div>
     </div>
     <div id="Cassette" class="mode-content" style="display: none;">
-      <!-- <img src='cassette_handle.png' id='handle'> -->
       <div id="cassette-rect">
-        <div id = "small-rect"></div>
+        <div id = "small-rect">
+          <img src="gear.png" id="gear-1" class="gear"></img>
+          <img src="gear.png" id="gear-2" class="gear"></img>
+        </div>
         <div id = "left-speak"></div>
         <div id = "right-speak"></div>
         <button class="play" id="cassette-position" onclick="playButton(event)"> 
           <i name="play-pause" class="fa fa-play"></i>
         </button>
         <button id="cassette-volume" class="volume"> </button>
+        <img src='cassette_handle.png' id='handle'></img>
      </div>
+    </div>
     <div id="Radio" class="mode-content" style="display: none;">
       <div id="radio-rect"> 
-        
+        <div id="inner-rect"></div>
+        <button class="play" id="radio-position" onclick="playButton(event)"> 
+          <i name="play-pause" class="fa fa-play"></i>
+        </button>
+        <button id="radio-volume" class="volume"></button>
+        <button id="radio-fm" class="radio-mode">FM</button>
+        <button id="radio-am" class="radio-mode">AM</button>
       </div>
     </div>
     <div id="Disc" class="mode-content" style="display: none;">
