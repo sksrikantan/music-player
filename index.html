@@ -37,7 +37,7 @@
       <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Vinyl</a>
       <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Cassette')">Cassette</a>
       <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Radio')">Radio</a>
-      <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'CD')">Compact Disc</a>
+      <!-- <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'CD')">Compact Disc</a> -->
     </div>
     <div id="Vinyl" class="mode-content">
       <div id="circle">
@@ -48,7 +48,7 @@
             <h5>PLAYA</h5>
           </div>
          </div>
-         <button class="play" id = "vinyl-position" onclick="playButton(event)"> 
+         <button class="play" id = "vinyl-play" onclick="playButton(event)"> 
           <i name="play-pause" class="fa fa-play"></i>
         </button>
          <button id="vinyl-volume" class="volume"> </button>
@@ -65,22 +65,25 @@
             <h5 class = 'title'>A Song!</h5>
             <h5>PLAYA</h5>
           </div>
-          <img src="gear.png" id="gear-1" class="gear"></img>
-          <img src="gear.png" id="gear-2" class="gear"></img>
         </div>
         <div id = "left-speak"></div>
         <div id = "right-speak"></div>
-        <button class="play" id="cassette-position" onclick="playButton(event)"> 
+        <button class="play" id="cassette-play" onclick="playButton(event)"> 
           <i name="play-pause" class="fa fa-play"></i>
         </button>
         <button id="cassette-volume" class="volume"> </button>
-        <img src='cassette_handle.png' id='handle'></img>
      </div>
     </div>
     <div id="Radio" class="mode-content" style="display: none;">
       <div id="radio-rect"> 
-        <div id="inner-rect"></div>
-        <button class="play" id="radio-position" onclick="playButton(event)"> 
+        <div id="inner-rect">
+          <div class="cassette-print">
+            <h5 class='artist-name'>Select</h5>
+            <h5 class = 'title'>A Song!</h5>
+            <h5>PLAYA</h5>
+          </div>
+        </div>
+        <button class="play" id="radio-play" onclick="playButton(event)"> 
           <i name="play-pause" class="fa fa-play"></i>
         </button>
         <button id="radio-volume" class="volume"></button>
@@ -95,6 +98,8 @@
     </div>
   </div>
   <script src="https://kit.fontawesome.com/1fe31c3bca.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
   <script src="meta.js"> </script>
   <script src="main.js"> </script>
   <script src="record.js"></script>
