@@ -36,7 +36,7 @@ songList.addEventListener("click", function(e) {
 
     var title = e.target.closest('li').getAttribute('data-name');
     var artist = e.target.closest('li').getAttribute('data-artist');
-    var source = e.target.closest('li').getAttribute('data-src');
+    var source = e.target.closest('li').getAttribute('src');
 
     let titles = document.querySelectorAll('.title')
     titles.forEach(function(match) {

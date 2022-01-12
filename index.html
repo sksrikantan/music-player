@@ -21,11 +21,12 @@
   </div>
   <div class="container">
     <div class="library">
-      <h2>Library</h2>
+      <h2 class="header">Library</h2>
+      <button class="sync" onclick="loadLibrary()">Sync NFTs</button> 
       <ul class="songlist">
-        <li data-src="songs/AaoNa.wav" data-artist="Shevya"><img src="songs/aaona.png"><span>Aao Na</span></li>
-        <li data-src="songs/NoSé.wav" data-artist="Michael Ventura"><img src="songs/nose.jpeg"><span>No Sé</span></li>
-        <li data-src="songs/Promises.wav" data-artist="Zahina"><img src="songs/promises.jpeg"><span>Promises</span></li>
+        <li src="songs/AaoNa.wav" data-artist="Shevya" data-name="Aao Na"><img src="songs/aaona.png"><span>Aao Na</span><span>Shevya</span></li>
+        <li src="songs/NoSé.wav" data-artist="Michael Ventura" data-name="No Sé"><img src="songs/nose.jpeg"><span>No Sé</span><span>Michael Ventura</span></li>
+        <li src="songs/Promises.wav" data-artist="Zahina" data-name="Promises"><img src="songs/promises.jpeg"><span>Promises</span><span>This is a very long description that could be what I get from an NFT</span></li>
       </ul> 
       <audio src="songs/NoSé.wav" id="audio"></audio>
       <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
@@ -103,5 +104,6 @@
   <script src="meta.js"> </script>
   <script src="main.js"> </script>
   <script src="record.js"></script>
+  <script src="library.js"></script>
 </body>
 </html>

@@ -1,8 +1,6 @@
 .topnav {
     background-color: #F3F6F8;
-    /* background-color: black; */
     overflow: hidden;
-    /* height: 10vh; */
   }
  
  .topnav .home {
@@ -34,6 +32,11 @@
     font-size: 17px;
     text-decoration: none;
     border-radius: 10px;
+    cursor: pointer;
+ }
+
+ .topnav button:hover { 
+    opacity: 90%;
  }
  
  .topnav p {
