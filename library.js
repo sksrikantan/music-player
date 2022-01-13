@@ -21,10 +21,20 @@ async function addSong(nft) {
     var ul = document.querySelector(".songlist");
     var li = document.createElement("li");
 
-    // let audioLink = obj.audio;
-    // let audio = audioLink.replace('https://gateway.pinata.cloud/ipfs/', 'ipfs://').replace('?preview=1', '');
-    // li.src = audio;
-    // console.log(li.src);
+    if (obj.audio) { 
+        let audioLink = obj.audio;
+        // let audio = audioLink.replace('https://gateway.pinata.cloud/ipfs/', 'ipfs://').replace('?preview=1', '');
+        li.src = audioLink;
+        console.log(li.src);
+    }
+    else if (obj.animation_url) { 
+        let audioLink = obj.animation_url;
+        // let audio = audioLink.replace('https://gateway.pinata.cloud/ipfs/', 'ipfs://').replace('?preview=1', '');
+        li.src = audioLink;
+        console.log(li.src);
+    } else { 
+        return;
+    }
 
     let imageLink = obj.image;
     console.log(imageLink);
