@@ -4,6 +4,17 @@
    padding:0;
 }
 
+@media (orientation: landscape) {
+   .blankscreen {
+   }
+ }
+ 
+ @media (orientation: portrait) {
+   .blankscreen {
+      visibility: hidden;
+   }
+ }
+
 .container {
     display: flex;
     width: 100vw;
