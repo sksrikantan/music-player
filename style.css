@@ -153,7 +153,6 @@
 }
 
 #small-circle{
-    
     position: absolute;
     right: 35%;
     top: 35%;
@@ -379,26 +378,3 @@
 #radio-am{
    left: 33%;
 }
-/* .gear{
-   animation: rotate 5s linear infinite; 
-   animation-play-state: paused;
-} */
-/* #gear-1{
-   position: absolute;
-   top: 30%;
-   left: 12%;
-   height: 30%;
-   width: 20%;
-}
-#gear-2{
-   position: absolute;
-   top: 30%;
-   right: 12%;
-   height: 30%;
-   width: 20%;
-}
-
-.container.play .gear{
-   animation-play-state: running;
-} */
-
