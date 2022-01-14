@@ -6,11 +6,17 @@
 
 @media (orientation: landscape) {
    .message { 
-      /* opacity: 100%; */
+      display: none;
+      background-color: #F3F6F8;
    }
 }
  
  @media (orientation: portrait) {
+   .message { 
+      text-align: none;
+      background-color: #F3F6F8;
+   }
+   
    .blankscreen {
       visibility: hidden;
       background-color:#F3F6F8;
@@ -132,7 +138,7 @@
 #circle {
    position: absolute;
    left: 45vw;
-   top: 22vh;
+   top: 25vh;
    margin: auto;
    height: 32vw;
    width: 32vw;
