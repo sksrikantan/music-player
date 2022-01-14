@@ -6,7 +6,7 @@
 
 @media (orientation: landscape) {
    .message { 
-      opacity: 100%;
+      /* opacity: 100%; */
    }
 }
  
