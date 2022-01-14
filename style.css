@@ -5,17 +5,21 @@
 }
 
 @media (orientation: landscape) {
-   .message { 
+   .portrait-mode { 
       display: none;
       visibility: hidden;
-      background-color: #F3F6F8;
+      text-align: center;
    }
 }
  
  @media (orientation: portrait) {
 
+   .portrait-mode {
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
+   }
    .message {
-      text-align: none;
       background-color: #F3F6F8;
    }
 
