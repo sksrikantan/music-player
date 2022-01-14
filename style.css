@@ -7,16 +7,18 @@
 @media (orientation: landscape) {
    .message { 
       display: none;
+      visibility: hidden;
       background-color: #F3F6F8;
    }
 }
  
  @media (orientation: portrait) {
-   .message { 
+
+   .message {
       text-align: none;
       background-color: #F3F6F8;
    }
-   
+
    .blankscreen {
       visibility: hidden;
       background-color:#F3F6F8;
