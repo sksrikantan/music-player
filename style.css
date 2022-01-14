@@ -5,13 +5,15 @@
 }
 
 @media (orientation: landscape) {
-   .blankscreen {
+   .message { 
+      visibility: hidden;
    }
- }
+}
  
  @media (orientation: portrait) {
    .blankscreen {
       visibility: hidden;
+      background-color:#F3F6F8;
    }
  }
 
