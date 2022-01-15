@@ -1,13 +1,104 @@
-.browse-container {
-    position: relative;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background-color:#F3F6F8;
-    text-align: center;
+body {
+    overflow:hidden;
 }
 
-h3 { 
+.parent {
+    height: 90vh;
+    width: 100vw;
+    overflow: scroll;
+
+}
+
+.grid {
+    background-color:#f3f8f6;
     text-align: center;
-    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: unset;
+    grid-auto-columns: unset;
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        background-color:#f3f8f6;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: unset;
+        grid-auto-columns: unset;
+    }
+  }
+
+.nft {
+    background: white;
+    /* border: 1px solid black; */
+    /* border-top-width: 75%; */
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom:10%; 
+    margin-left:10%;
+    margin-right:10%;
+    /* text-align: center; */
+}
+
+.nft:hover {
+    box-shadow: 0px 0px 5px #888888;
+    /* opacity: 90%; */
+}
+
+.mint {
+    float:left;
+    background: #d0f5e6;
+    border: none;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.mint:hover{
+    cursor: pointer;
+    opacity: 90%; 
+    box-shadow: 0px 0px 5px #404643;
+}
+
+.price {
+    float:right;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+.title {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.artist { 
+    font-size: 15px;
+    text-align:center;
+    margin: 10px;
+}
+
+img {
+    float:center;
+    max-height: 81%;
+    max-width: 81%;
+    /* margin-top: %; */
+    padding-left: 10%;
+    padding-right:10%;
+}
+
+.topnav { 
+    background-color: #f3f8f3;
+    overflow: hidden;
 }

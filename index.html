@@ -8,12 +8,13 @@
   <title>Fonos Music Player</title>
   <link rel="icon" href="./media/favicon.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Padauk">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <noscript>This website requires scripts!</noscript>
   <div class="portrait-mode">
     <h2 class="message">Turn device to landscape mode!</h2>
   </div>
@@ -31,13 +32,12 @@
           <h2 class="header">Library</h2>
           <button class="sync" onclick="loadLibrary()">Sync NFTs</button> 
         </div>
-        <ul class="songlist">
-          <li src="songs/AaoNa.wav" data-artist="Shevya" data-name="Aao Na"><img src="songs/aaona.png"></iframe><span>Aao Na</span></li>
-          <li src="songs/NoSé.wav" data-artist="Michael Ventura" data-name="No Sé"><img src="songs/nose.jpeg"><span>No Sé</span></li>
-          <li src="songs/Promises.wav" data-artist="Zahina" data-name="Promises"><img src="songs/promises.jpeg"><span>Promises</span></li>
-          <li src="songs/Ilallah.wav" data-artist="Dil Se" data-name="Ilallah"><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span></li>
-        </ul> 
         <audio src="songs/NoSé.wav" id="audio"></audio>
+        <ul class="songlist">
+          <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.png"><span>Aao Na</span><p>Featured</p></li>
+          <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
+          <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
+        </ul> 
         <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
         <audio src="noise/tape_hiss.wav" id="hiss"></audio>
         <audio src="noise/radio_muffle.wav" id="muffle"></audio>
@@ -53,8 +53,8 @@
         <div id="circle">
           <div id="small-circle">
             <div class="vinyl-print">
-              <!-- <h5 class='artist-name'>Select</h5> -->
-              <!-- <h5 class = 'title'>A Song!</h5> -->
+              <h5 class='artist-name'>Play a song!</h5>
+              <h5 class = 'title'></h5>
               <h5>FONOS</h5>
             </div>
           </div>

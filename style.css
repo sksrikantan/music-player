@@ -85,6 +85,7 @@
 
 .library ul{ 
    position: absolute; 
+   float: none;
    overflow: scroll;
    list-style-type: none;
    width: 27vw;
@@ -99,19 +100,20 @@
    border-bottom: 1px solid #DDD; 
 }
 
+.library ul li img {
+   max-width: 5.5vw;
+   max-height: 10vh;
+}
+
 .library ul li span { 
    margin-top: 7%;
    margin-left: 10%;
 }
 
-.library ul li img { 
-   width: 5vw;
-   height: 10vh;
-}
-
-.library ul li iframe { 
-   width: 5vw;
-   height: 10vh;
+.library ul li p { 
+   margin-top: 7%;
+   margin-left: 10%;
+   font-style: italic;
 }
 
 
