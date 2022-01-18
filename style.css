@@ -1,33 +1,8 @@
 *{
-   font-family: 'Lekton', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    margin:0;
    padding:0;
 }
-
-@media (orientation: landscape) {
-   .portrait-mode { 
-      display: none;
-      visibility: hidden;
-      text-align: center;
-   }
-}
- 
- @media (orientation: portrait) {
-
-   .portrait-mode {
-      height: 100vh;
-      width: 100vw;
-      text-align: center;
-   }
-   .message {
-      background-color: #F3F6F8;
-   }
-
-   .blankscreen {
-      visibility: hidden;
-      background-color:#F3F6F8;
-   }
- }
 
 .container {
     display: flex;
@@ -42,11 +17,11 @@
  
 .library {
    display: flex;
-   margin: 5% 0% 0% 5%;
+   margin: 5% 0% 0% 10%;
    padding: 2% 2% 2% 2%;
    background-color: white;
    border-radius: 5px;
-   height: 60vh;
+   max-height: 60vh;
    width: 27vw;
    overflow: scroll;
    border: 1px color black;
@@ -55,28 +30,29 @@
 #bar {
    position: relative;
    background-color: black;
-   /* min-height: 50%; */
+   display: grid;
 }
 
 .header { 
    position: absolute;
    margin-top: 3%;
-   display: inline-block;
+   margin-bottom: 10px;
    overflow: hidden;
 }
 
 .sync {
    position: absolute; 
-   height: 5vh;
-   width: 7vw;
+   height: 30px;
+   width: 100px;
    margin-left: 20vw;
+   margin-right: 10px;
+   padding: 0;
    cursor: pointer;
    border: 1px solid black;
    border-radius: 10px;
    overflow: hidden;
-   overflow-wrap: break-word;
+   /* overflow-wrap: break-word; */
    background-color: #F3F6F8;
-   display: inline-block;
 }
 
 .sync:hover { 
@@ -101,8 +77,8 @@
 }
 
 .library ul li img {
-   max-width: 5.5vw;
-   max-height: 10vh;
+   max-width: 5vw;
+   max-height: 5vw;
 }
 
 .library ul li span { 
@@ -143,11 +119,15 @@
    color: blue;
 }
 
+.Vinyl {
+   padding-left: 10%;
+}
+
 #circle {
    position: absolute;
    left: 45vw;
    top: 25vh;
-   margin: auto;
+   /* margin: auto; */
    height: 32vw;
    width: 32vw;
    background: #2E2F3C;
@@ -175,10 +155,6 @@
    animation: rotate 5s linear infinite; 
    animation-play-state: paused;
 }
-
-/* .container.play .vinyl-print{
-   animation-play-state: running;
-} */
 
 @keyframes rotate {
    from{
@@ -380,3 +356,30 @@
 #radio-am{
    left: 33%;
 }
+
+/* @media (orientation: landscape) {
+   .portrait-mode { 
+      display: none;
+      visibility: hidden;
+      text-align: center;
+   }
+}
+ 
+ @media (orientation: portrait) {
+
+   .portrait-mode {
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
+   }
+   .message {
+      background-color: #F3F6F8;
+   }
+
+   .blankscreen {
+      visibility: hidden;
+      background-color:#F3F6F8;
+   }
+ } */
+
+

@@ -4,25 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="site_image.png">
+  <meta property="og:image" content="site_image.jpg">
   <title>Fonos Music Player</title>
-  <link rel="icon" href="./media/favicon.png">
+  <link rel="icon"   href="./media/favicon.jpg">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Padauk">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <noscript>This website requires scripts!</noscript>
-  <div class="portrait-mode">
-    <h2 class="message">Turn device to landscape mode!</h2>
-  </div>
   <div class="blankscreen">
     <div class="topnav">
-      <a class="home" href="./index.html">FONOS</a>
-      <a class="sub-page" href="./browse.html">Browse</a>
-      <a class="sub-page" href="./mint.html">Submit</a>
+      <a class="home" href="./index.html">fonos</a>
+      <a class="browse" href="./browse.html">Browse</a>
+      <a class="submit" href="./mint.html">Submit</a>
       <button id='loginButton'> MetaMask </button>
       <p id='userWallet'> </p>
     </div>
@@ -32,9 +29,9 @@
           <h2 class="header">Library</h2>
           <button class="sync" onclick="loadLibrary()">Sync NFTs</button> 
         </div>
-        <audio src="songs/NoSé.wav" id="audio"></audio>
+        <audio src="songs/NoSe.wav" id="audio"></audio>
         <ul class="songlist">
-          <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.png"><span>Aao Na</span><p>Featured</p></li>
+          <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
           <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
           <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
         </ul> 
