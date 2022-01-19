@@ -15,94 +15,100 @@
 </head>
 <body>
   <noscript>This website requires scripts!</noscript>
-  <div class="blankscreen">
-    <div class="topnav">
-      <a class="home" href="./index.html">fonos</a>
-      <a class="browse" href="./browse.html">Browse</a>
-      <a class="submit" href="./mint.html">Submit</a>
-      <button id='loginButton'> MetaMask </button>
-      <p id='userWallet'> </p>
+  <div class="topnav">
+    <a class="home" href="./index.html">fonos</a>
+    <button id='loginButton'> MetaMask </button>
+    <p id='userWallet'> </p>
+    <a class="submit" href="./submit.html">Submit</a>
+    <a class="browse" href="./browse.html">Browse</a>
+  </div>
+  <div class="container">
+    <div style="display:none">
+      <audio src="songs/NoSe.wav" id="audio"></audio>
+      <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
+      <audio src="noise/tape_hiss.wav" id="hiss"></audio>
+      <audio src="noise/radio_muffle.wav" id="muffle"></audio>
+      <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
     </div>
-    <div class="container">
-      <div class="library">
-        <div id="bar">
-          <h2 class="header">Library</h2>
-          <button class="sync" onclick="loadLibrary()">Sync NFTs</button> 
-        </div>
-        <audio src="songs/NoSe.wav" id="audio"></audio>
-        <ul class="songlist">
-          <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
-          <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
-          <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
-        </ul> 
-        <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
-        <audio src="noise/tape_hiss.wav" id="hiss"></audio>
-        <audio src="noise/radio_muffle.wav" id="muffle"></audio>
-        <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
+    <div class="library">
+      <div id="bar">
+        <h2 class="header">Library</h2>
+        <button class="sync" onclick="loadLibrary()">Sync NFTs</button> 
       </div>
-      <div class='navbar' id="botnav">
-        <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Vinyl</a>
-        <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Cassette')">Cassette</a>
-        <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Radio')">Radio</a>
-        <!-- <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'CD')">Compact Disc</a> -->
-      </div>
-      <div id="Vinyl" class="mode-content">
-        <div id="circle">
-          <div id="small-circle">
-            <div class="vinyl-print">
-              <h5 class='artist-name'>Play a song!</h5>
-              <h5 class = 'title'></h5>
-              <h5>FONOS</h5>
-            </div>
+      <ul class="songlist">
+        <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
+        <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
+        <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
+        <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
+        <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
+        <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
+        <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
+        <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
+        <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
+      </ul> 
+    </div>
+    <div id="Vinyl" class="mode-content column">
+      <div id="circle">
+        <div id="small-circle">
+          <div class="vinyl-print">
+            <h5 class='artist-name'>Play a song!</h5>
+            <h5 class = 'title'></h5>
+            <h5>FONOS</h5>
           </div>
-          <button class="play" id = "vinyl-play" onclick="playButton(event)"> 
-            <i name="play-pause" class="fa fa-play"></i>
-          </button>
-          <button id="vinyl-volume" class="volume"> </button>
-          <div id="rect1"> </div>
-          <div id="rect2"> </div>
-          <div id="record-player-circle"> </div>
         </div>
-      </div>
-      <div id="Cassette" class="mode-content" style="display: none;">
-        <div id="cassette-rect">
-          <div id = "small-rect">
-            <div class="cassette-print">
-              <h5 class='artist-name'>Select</h5>
-              <h5 class = 'title'>A Song!</h5>
-              <h5>FONOS</h5>
-            </div>
-          </div>
-          <div id = "left-speak"></div>
-          <div id = "right-speak"></div>
-          <button class="play" id="cassette-play" onclick="playButton(event)"> 
-            <i name="play-pause" class="fa fa-play"></i>
-          </button>
-          <button id="cassette-volume" class="volume"> </button>
-      </div>
-      </div>
-      <div id="Radio" class="mode-content" style="display: none;">
-        <div id="radio-rect"> 
-          <div id="inner-rect">
-            <div class="cassette-print">
-              <h5 class='artist-name'>Select</h5>
-              <h5 class = 'title'>A Song!</h5>
-              <h5>FONOS</h5>
-            </div>
-          </div>
-          <button class="play" id="radio-play" onclick="playButton(event)"> 
-            <i name="play-pause" class="fa fa-play"></i>
-          </button>
-          <button id="radio-volume" class="volume"></button>
-          <button id="radio-fm" class="radio-mode">FM</button>
-          <button id="radio-am" class="radio-mode">AM</button>
-        </div>
-      </div>
-      <div id="Disc" class="mode-content" style="display: none;">
-        <div id="cd"> 
-        </div>
+        <button class="play" id = "vinyl-play" onclick="playButton(event)"> 
+          <i name="play-pause" class="fa fa-play"></i>
+        </button>
+        <button id="vinyl-volume" class="volume"> </button>
+        <div id="rect1"> </div>
+        <div id="rect2"> </div>
+        <div id="record-player-circle"> </div>
       </div>
     </div>
+    <div id="Cassette" class="mode-content" style="display: none;">
+      <div id="cassette-rect">
+        <div id = "small-rect">
+          <div class="cassette-print">
+            <h5 class='artist-name'>Select</h5>
+            <h5 class = 'title'>A Song!</h5>
+            <h5>FONOS</h5>
+          </div>
+        </div>
+        <div id = "left-speak"></div>
+        <div id = "right-speak"></div>
+        <button class="play" id="cassette-play" onclick="playButton(event)"> 
+          <i name="play-pause" class="fa fa-play"></i>
+        </button>
+        <button id="cassette-volume" class="volume"> </button>
+    </div>
+    </div>
+    <div id="Radio" class="mode-content" style="display: none;">
+      <div id="radio-rect"> 
+        <div id="inner-rect">
+          <div class="cassette-print">
+            <h5 class='artist-name'>Select</h5>
+            <h5 class = 'title'>A Song!</h5>
+            <h5>FONOS</h5>
+          </div>
+        </div>
+        <button class="play" id="radio-play" onclick="playButton(event)"> 
+          <i name="play-pause" class="fa fa-play"></i>
+        </button>
+        <button id="radio-volume" class="volume"></button>
+        <button id="radio-fm" class="radio-mode">FM</button>
+        <button id="radio-am" class="radio-mode">AM</button>
+      </div>
+    </div>
+    <div id="Disc" class="mode-content" style="display: none;">
+      <div id="cd"> 
+      </div>
+    </div>
+  </div>
+  <div class='navbar' id="botnav">
+    <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Vinyl</a>
+    <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Cassette')">Cassette</a>
+    <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Radio')">Radio</a>
+    <!-- <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'CD')">Compact Disc</a> -->
   </div>
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
   <script src="https://unpkg.com/moralis/dist/moralis.js"></script>

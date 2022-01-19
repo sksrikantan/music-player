@@ -1,7 +1,6 @@
 body {
-    overflow:hidden;
+    background-color: #f3f8f3;
 }
-
 
 .topnav { 
     background-color: #f3f8f3;
@@ -120,10 +119,6 @@ body {
     margin: auto; 
     width: 50%;  
     border-radius: 10px;
-    /* -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s */
   }
 
     .columns {
@@ -233,11 +228,3 @@ body {
     cursor: pointer;
     color: darkgray;
   }
-  /* @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-  }
-  @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-  } */
