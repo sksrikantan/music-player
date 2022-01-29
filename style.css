@@ -355,6 +355,12 @@ body {
    left: 33%;
 }
 
+#Video {
+   position: relative;
+   margin-left: 20%;
+   margin-top: 15%;
+}
+
 @media screen and (max-width: 800px) {
 
    body {

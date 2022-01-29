@@ -39,12 +39,12 @@
         <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
         <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
         <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
-        <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
+        <!-- <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
         <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
         <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
         <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
         <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
-        <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
+        <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li> -->
       </ul> 
     </div>
     <div id="Vinyl" class="mode-content column">
@@ -65,7 +65,10 @@
         <div id="record-player-circle"> </div>
       </div>
     </div>
-    <div id="Cassette" class="mode-content" style="display: none;">
+    <div id="Video" class="mode-content" style="display: none;">
+        <p>Coming Soon</p>
+    </div>
+    <!-- <div id="Cassette" class="mode-content" style="display: none;">
       <div id="cassette-rect">
         <div id = "small-rect">
           <div class="cassette-print">
@@ -102,12 +105,13 @@
     <div id="Disc" class="mode-content" style="display: none;">
       <div id="cd"> 
       </div>
-    </div>
+    </div> -->
   </div>
   <div class='navbar' id="botnav">
-    <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Vinyl</a>
-    <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Cassette')">Cassette</a>
-    <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Radio')">Radio</a>
+    <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Audio</a>
+    <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Video')">Video</a>
+    <!-- <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Cassette')">Cassette</a>
+    <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Radio')">Radio</a> -->
     <!-- <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'CD')">Compact Disc</a> -->
   </div>
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>

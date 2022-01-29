@@ -114,43 +114,43 @@ body {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
   }
-  .modal-content {
+.modal-content {
     background-color: white;
     margin: auto; 
     width: 50%;  
     border-radius: 10px;
-  }
+}
 
-    .columns {
-        display: flex;
-        flex-direction: row;
-    }
+.columns {
+    display: flex;
+    flex-direction: row;
+}
 
-    .column {
-        flex: 50%;
-        text-align: left;
-    }
+.column {
+    flex: 50%;
+    text-align: left;
+}
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .columns {
         flex-direction: column;
     }
-  }
+}
 
-  .modal-image {
-      max-height: 81%;
-      max-width: 81%;
-      margin: 10%;
-      padding: 0;
-      border-radius: 10px;
-  }
+.modal-image {
+    max-height: 81%;
+    max-width: 81%;
+    margin: 10%;
+    padding: 0;
+    border-radius: 10px;
+}
 
-  /* .modal-audio {
-      padding: 0;
-      margin: 0;
-  } */
+/* .modal-audio {
+    padding: 0;
+    margin: 0;
+} */
 
-  .modal-mint {
+.modal-mint {
     margin: 2%;
     padding: 2%;    
     margin-top: 50px;
@@ -159,31 +159,37 @@ body {
     border: none;
     font-size: 18px;
     border-radius: 10px;
-  }
+}
 
-  .modal-price {
+.modal-mint:hover{
+    cursor: pointer;
+    opacity: 90%; 
+    box-shadow: 0px 0px 5px #404643;
+}
+
+.modal-price {
     padding: 2%;
     margin-top: 50px;
     float: right;
-  }
+}
 
-  .modal-title {
+.modal-title {
     margin: 2%;
     margin-top: 40%;
     font-size: 18px;
     font-style: italic;
     font-weight: bold;
-  }
+}
 
-  .modal-artist {
+.modal-artist {
     margin: 2%;
-  }
+}
 
-  .modal-description {
+.modal-description {
     margin: 2%;
-  }
+}
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .modal-image { 
         margin: 0;
         margin-top: 15%;
@@ -211,10 +217,9 @@ body {
         margin-left: 15%;
         margin-bottom: 10%;
     }
+}
 
-  }
-
-  .close-btn {
+.close-btn {
     width: 25px;
     height: 25px;
     float: right; 
@@ -223,8 +228,8 @@ body {
     font-weight: bold;
     margin-right: 10px;
     margin-top: 15px;
-  }
-  .close-btn:hover {
+}
+.close-btn:hover {
     cursor: pointer;
     color: darkgray;
-  }
+}
