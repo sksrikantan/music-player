@@ -6,7 +6,7 @@ const hiss = document.querySelector('#hiss');
 const muffle = document.querySelector ('#muffle');
 sessionStorage.player = 'Vinyl';
 const playbtns = document.getElementsByName("play-pause");
-const bgcolors = {"Vinyl": "#F3F6F8", "Cassette": "#F8F4F3", "Radio": "#F8F7F3", "CD": "#F3F6F8"};
+const bgcolors = {"Vinyl": "#F3F6F8", "Cassette": "#F8F4F3", "Radio": "#F8F7F3", "CD": "#F3F6F8", "Video": "#F8F4F3"};
 
 function openMode(evt, mode){
     var i, content, links;
