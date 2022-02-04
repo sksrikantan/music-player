@@ -281,14 +281,11 @@ video{
    height: 5.5vw;
 }
 
-/* #soundbar {
+#Video {
    position: relative;
-   margin-bottom: 0.2vw;
-   width: 7vw;
-   height: 0.3vw;
-   background: #C4C4C4;
-   border-radius: 10px;
-} */
+   margin-left: 20%;
+   margin-top: 15%;
+}
 
 @media screen and (max-width: 800px) {
 
