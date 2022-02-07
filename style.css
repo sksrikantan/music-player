@@ -255,7 +255,7 @@ video{
 #tv-play{
    background: #A5A4A4;
    right: 2.5vw;
-   top: 4vw;
+   top: 3vw;
    width: 5.5vw;
    height: 5.5vw;
 }
@@ -263,7 +263,7 @@ video{
 #tv-volume {
    background: #A5A4A4;
    right: 2.5vw;
-   top: 10vw;
+   top: 9vw;
    width: 5.5vw;
    height: 5.5vw;
 }
@@ -274,17 +274,20 @@ video{
 }
 
 #strip {
-   background: #A5A4A4;
-   right: 2.5vw;
-   top: 16vw;
+   /* background: #A5A4A4; */
+   right: 2vw;
+   top: 15vw;
    width: 5.5vw;
    height: 5.5vw;
 }
 
-#Video {
-   position: relative;
-   margin-left: 20%;
-   margin-top: 15%;
+#soundbar {
+   background: #A5A4A4;
+   /* position: relative;  */
+   width: 5vw;
+   height: 0.2vw;
+   margin-top: 0.5vw;
+   /* margin */
 }
 
 @media screen and (max-width: 800px) {
