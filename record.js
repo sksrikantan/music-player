@@ -7,6 +7,12 @@ const muffle = document.querySelector ('#muffle');
 sessionStorage.player = 'Vinyl';
 const playbtns = document.getElementsByName("play-pause");
 const bgcolors = {"Vinyl": "#F3F6F8", "Cassette": "#F8F4F3", "Radio": "#F8F7F3", "CD": "#F3F6F8", "Video": "#F8F4F3"};
+const cleanButton = document.querySelector('#vinyl-clean')
+const cleanBool = true; 
+
+function cleanSignal() {
+    crackle.pause();
+}
 
 function openMode(evt, mode){
     var i, content, links;
@@ -82,9 +88,6 @@ function playMusic() {
     if (sessionStorage.player == 'Vinyl') {
         playVinyl();
         } 
-    if (sessionStorage.player == 'Cassette') {
-        playCassette();
-        } 
     if (sessionStorage.player == 'Radio') {
         playRadio();
         } 
@@ -97,9 +100,7 @@ function pauseMusic() {
     if (sessionStorage.player == 'Vinyl') {
         pauseVinyl();
         } 
-    if (sessionStorage.player == 'Cassette') {
-        pauseCassette();
-        } 
+
     if (sessionStorage.player == 'Radio') {
         pauseRadio();
         } 
@@ -117,15 +118,7 @@ function pauseVinyl(){
     crackle.pause();
     audio.pause();
 }
-function playCassette(){
-    hiss.loop = true;
-    hiss.play();
-    audio.play();
-}
-function pauseCassette(){
-    hiss.pause();
-    audio.pause();
-}
+
 function playRadio(){
     muffle.loop = true;
     muffle.play();
@@ -133,12 +126,6 @@ function playRadio(){
 }
 function pauseRadio(){
     muffle.pause();
-    audio.pause();
-}
-function playCD(){
-    audio.play();
-}
-function pauseCD(){
     audio.pause();
 }
 
@@ -150,11 +137,10 @@ function switchNoise() {
         if (sessionStorage.player == 'Vinyl') {
             crackle.play();
         }
-        if (sessionStorage.player == 'Cassette') {
-            hiss.play();
-        }
         if (sessionStorage.player == 'Radio') {
             muffle.play();
         }
     }
 }
+
+

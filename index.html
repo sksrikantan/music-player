@@ -59,7 +59,7 @@
         <button class="play" id = "vinyl-play" onclick="playButton(event)"> 
           <i name="play-pause" class="fa fa-play"></i>
         </button>
-        <button id="vinyl-volume" class="volume"> 
+        <button id="vinyl-clean" class="clean" onclick="cleanSignal(event)"> 
           <p>Clean</p>
         </button>
         <div id="rect1"> </div>
@@ -69,7 +69,7 @@
     </div>
     <div id="Video" class="mode-content column"style="display: none;" >
         <div id="tv-box">
-          <video src="songs/lsd.mp4" type="video/mp4"></video>
+          <video src="songs/aaona.mp4" type="video/mp4"></video>
           <button class="play" id ="tv-play" onclick="playButton(event)"> 
             <i name="play-pause" class="fa fa-play"></i>
           </button>
@@ -87,16 +87,13 @@
             <div id="soundbar"></div>
             <div id="soundbar"></div>
           </div>
-            <!-- <div id="soundbar"></div>
-             -->
-            <!-- </button> -->
         </div>
     </div>
   </div>
-  <div class='navbar' id="botnav">
+  <!-- <div class='navbar' id="botnav">
     <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Audio</a>
     <a href="#" class="mode-nav-buttons" onclick="openMode(event, 'Video')">Video</a>
-  </div>
+  </div> -->
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
   <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
   <script src="meta.js"> </script>

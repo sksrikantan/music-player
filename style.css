@@ -180,12 +180,12 @@ body {
    border: 3px solid rgb(0, 0, 0);
 }
 
-.volume{
+.clean{
    position: absolute;
    border-radius: 50%;
    border: none;
 }
-#vinyl-volume{
+#vinyl-clean{
    background: #A5A4A4;
    right: -18%;
    top: 70%;
@@ -193,7 +193,7 @@ body {
    height: 17%;
 }
 
-.volume:hover{
+.clean:hover{
    border: 2px solid rgb(0, 0, 0);
 }
 
@@ -238,8 +238,8 @@ body {
 #tv-box {
       height: 24vw;
       width: 42vw;
-      background: #311717;
-      border: 1vw solid #c11818;
+      background: #948282;
+      border: 1vw solid #000000;
       box-sizing: border-box;
       border-radius: 2vw;
 }
@@ -248,8 +248,8 @@ video{
    height: 22vw;
    width: 29vw;
    margin-top: 0.3vw;
-   margin-left: 2.5vw;
-   border-radius: 2vw;
+   /* margin-left: 2.5vw; */
+   /* border-radius: 2vw; */
 }
 
 #tv-play{

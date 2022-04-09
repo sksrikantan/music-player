@@ -1,14 +1,17 @@
 const grid = document.querySelector('.grid');
-let modal = document.querySelector(".modal")
-let closeBtn = document.querySelector(".close-btn")
-
+let modal = document.querySelector(".modal");
+let closeBtn = document.querySelector(".close-btn");
+let playPrev = document.querySelector(".prev-play");
+let audio = document.querySelector("audio");
+let audioState = false;
 
 grid.addEventListener("click", function(e) {
 
     var nft = e.target.closest('.nft');
     var price = nft.querySelector('.price').innerText;
+    console.log(price);
     var image = nft.querySelector(".image").src;
-    var audio = nft.querySelector(".song").src;
+    // var audio = nft.querySelector(".song").src;
     var title = nft.querySelector(".title").innerText;
     var artist = nft.querySelector(".artist").innerText;
     var description = nft.querySelector(".description").innerText;
@@ -34,3 +37,17 @@ window.onclick = function(e){
     modal.style.display = "none"
   }
 }
+
+playPrev.onclick = function() {
+  if (audioState == false) {
+    audio.play();
+    audioState = true;
+    playPrev.classList = 'fa fa-pause fa-3x';
+  }
+  else {
+    audio.pause();
+    audioState = false;
+    playPrev.classList = 'fa fa-play fa-3x';
+  }
+}
+
