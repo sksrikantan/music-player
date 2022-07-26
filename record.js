@@ -8,10 +8,22 @@ sessionStorage.player = 'Vinyl';
 const playbtns = document.getElementsByName("play-pause");
 const bgcolors = {"Vinyl": "#F3F6F8", "Cassette": "#F8F4F3", "Radio": "#F8F7F3", "CD": "#F3F6F8", "Video": "#F8F4F3"};
 const cleanButton = document.querySelector('#vinyl-clean')
-const cleanBool = true; 
+cleanBool = false; 
 
 function cleanSignal() {
-    crackle.pause();
+    vinylText = document.getElementById("vinyl-clean");
+    if (!cleanBool) {
+        crackle.pause();
+        cleanBool = true;
+        vinylText.innerText = "Clean"
+    } 
+    else {
+        if(songName.style.animationPlayState == "running") {
+            crackle.play();
+        }
+        cleanBool = false;
+        vinylText.innerText = "Noise"
+    }
 }
 
 function openMode(evt, mode){
@@ -88,7 +100,7 @@ function playMusic() {
     if (sessionStorage.player == 'Vinyl') {
         playVinyl();
         } 
-    if (sessionStorage.player == 'Radio') {
+    else if (sessionStorage.player == 'Radio') {
         playRadio();
         } 
     else {
@@ -100,8 +112,7 @@ function pauseMusic() {
     if (sessionStorage.player == 'Vinyl') {
         pauseVinyl();
         } 
-
-    if (sessionStorage.player == 'Radio') {
+    else if (sessionStorage.player == 'Radio') {
         pauseRadio();
         } 
     else {
@@ -111,7 +122,9 @@ function pauseMusic() {
 
 function playVinyl(){
     crackle.loop = true;
-    crackle.play();
+    if (!cleanBool) {
+        crackle.play();
+    }
     audio.play();
 }
 function pauseVinyl(){

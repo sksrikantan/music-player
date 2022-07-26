@@ -1,5 +1,5 @@
-const serverUrl = "https://ofpinptronvn.usemoralis.com:2053/server";
-const appId = "pWdm4Ivq5d8YfPLv6nXYTBa976fo8lZowDQlrJAy";
+const serverUrl = "https://tlm7luqyy4k3.usemoralis.com:2053/server";
+const appId = "kSv42gBDNoTpmmzDkKDrv5OIVA5eiWxwCId1vz8m";
 Moralis.start({ serverUrl, appId });
 
 async function getObj(){

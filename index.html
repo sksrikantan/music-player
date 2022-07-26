@@ -24,7 +24,7 @@
   </div>
   <div class="container">
     <div style="display:none">
-      <audio src="songs/NoSe.wav" id="audio"></audio>
+      <audio src="songs/Nasha.mp3" id="audio"></audio>
       <audio src="noise/vinyl_crackle.wav" id="crackle"></audio>
       <audio src="noise/tape_hiss.wav" id="hiss"></audio>
       <audio src="noise/radio_muffle.wav" id="muffle"></audio>
@@ -36,9 +36,9 @@
         <button class="sync" onclick="loadLibrary()">Sync NFTs</button> 
       </div>
       <ul class="songlist">
-        <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
-        <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
-        <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>Ilallah</span><p>Featured</p></li>
+        <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.mp3"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
+        <li data-artist="Shevya" data-name="Nasha"><audio id='song' src="songs/Nasha.mp3"></audio><img src="songs/nasha.jpeg"><span>Nasha</span><p>Featured</p></li>
+        <li data-artist="Shankara" data-name="Kadhal Oli"><audio id='song' src="songs/KadhalOli.mp3"></audio><img src="songs/kadhaloli.jpg"><span>Kadhal Oli</span><p>Featured</p></li>
         <!-- <li data-artist="Shevya" data-name="Aao Na"><audio id='song' src="songs/AaoNa.wav"></audio><img src="songs/aaona.jpg"><span>Aao Na</span><p>Featured</p></li>
         <li data-artist="Zahina" data-name="Promises"><audio id='song' src="songs/Promises.wav"></audio><img src="songs/promises.jpeg"><span>Promises</span><p>Featured</p></li>
         <li data-artist="Dil Se" data-name="Ilallah"><audio id='song' src="songs/Ilallah.wav"></audio><img src="songs/ilallah.jpeg"><span>UC Berkeley Dil Se</span><p>Featured</p></li>
@@ -60,14 +60,14 @@
           <i name="play-pause" class="fa fa-play"></i>
         </button>
         <button id="vinyl-clean" class="clean" onclick="cleanSignal(event)"> 
-          <p>Clean</p>
+          <p>Noise</p>
         </button>
         <div id="rect1"> </div>
         <div id="rect2"> </div>
         <div id="record-player-circle"> </div>
       </div>
     </div>
-    <div id="Video" class="mode-content column"style="display: none;" >
+    <!-- <div id="Video" class="mode-content column"style="display: none;" >
         <div id="tv-box">
           <video src="songs/aaona.mp4" type="video/mp4"></video>
           <button class="play" id ="tv-play" onclick="playButton(event)"> 
@@ -88,7 +88,7 @@
             <div id="soundbar"></div>
           </div>
         </div>
-    </div>
+    </div> -->
   </div>
   <!-- <div class='navbar' id="botnav">
     <a href="#" class="mode-nav-buttons active" onclick="openMode(event, 'Vinyl')">Audio</a>
